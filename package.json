@@ -1,0 +1,17 @@
+{
+  "name": "react-states",
+  "private": true,
+  "version": "0.0.1",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "start": "lerna run start --stream"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
