@@ -1,0 +1,2134 @@
+{
+  "trips": {
+    "YjEyNzFlNGQ6ODI4MjJkMWM": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": 48,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 12242,
+      "duration": 490,
+      "has_transfers": false,
+      "id": "YjEyNzFlNGQ6ODI4MjJkMWM",
+      "operator_id": "1ab559e2-f6f8-4704-b3b8-69e28cbcd62b",
+      "origin_location_id": 93866,
+      "departure_time": "2022-04-20T02:45:00",
+      "arrival_time": "2022-04-20T10:55:00",
+      "vehicle_type": "bus",
+      "bus": null,
+      "has_bus_details": null,
+      "prices": {
+        "currency": "EUR",
+        "total": 2860,
+        "categories": {
+          "adult": 2400
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 2400,
+          "fees": 460,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": []
+    },
+    "NjQ0NDRkMDc6ZTNhMzgwNWE": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": 55,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 12242,
+      "duration": 520,
+      "has_transfers": false,
+      "id": "NjQ0NDRkMDc6ZTNhMzgwNWE",
+      "operator_id": "1ab559e2-f6f8-4704-b3b8-69e28cbcd62b",
+      "origin_location_id": 93866,
+      "departure_time": "2022-04-20T06:45:00",
+      "arrival_time": "2022-04-20T15:25:00",
+      "vehicle_type": "bus",
+      "bus": null,
+      "has_bus_details": null,
+      "prices": {
+        "currency": "EUR",
+        "total": 2860,
+        "categories": {
+          "adult": 2400
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 2400,
+          "fees": 460,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": []
+    },
+    "MzhmZTY1YmQ6ODZlMzI2ZGY": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": 54,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 12242,
+      "duration": 475,
+      "has_transfers": false,
+      "id": "MzhmZTY1YmQ6ODZlMzI2ZGY",
+      "operator_id": "1ab559e2-f6f8-4704-b3b8-69e28cbcd62b",
+      "origin_location_id": 93866,
+      "departure_time": "2022-04-20T23:20:00",
+      "arrival_time": "2022-04-21T07:15:00",
+      "vehicle_type": "bus",
+      "bus": null,
+      "has_bus_details": null,
+      "prices": {
+        "currency": "EUR",
+        "total": 1200,
+        "categories": {
+          "adult": 900
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 900,
+          "fees": 300,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": []
+    },
+    "NmI2NDUyNzk6MmEyYzNkMDU": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": 52,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 12242,
+      "duration": 400,
+      "has_transfers": false,
+      "id": "NmI2NDUyNzk6MmEyYzNkMDU",
+      "operator_id": "16c680b1-ae30-43d0-8dae-61e7a21f119e",
+      "origin_location_id": 10443,
+      "passenger_questions": [],
+      "departure_time": "2022-04-20T01:20:00",
+      "arrival_time": "2022-04-20T08:00:00",
+      "vehicle_type": "bus",
+      "bus": null,
+      "has_bus_details": null,
+      "prices": {
+        "currency": "EUR",
+        "total": 1199,
+        "categories": {
+          "adult": 1199
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 1199,
+          "fees": 0,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T01:20:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 10443,
+          "geohash": "ezzx534fd",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T08:00:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 12242,
+          "geohash": "u09ty4jqq",
+          "name": "Paris (Bercy Seine)",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "NmFjYTkwNWE6NzJiZjBlYjI": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": 67,
+      "vehicle": null,
+
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 5641,
+      "duration": 1105,
+      "has_transfers": false,
+      "id": "NmFjYTkwNWE6NzJiZjBlYjI",
+      "operator_id": "16c680b1-ae30-43d0-8dae-61e7a21f119e",
+      "origin_location_id": 10443,
+      "passenger_questions": [],
+      "departure_time": "2022-04-20T09:40:00",
+      "arrival_time": "2022-04-21T04:05:00",
+      "vehicle_type": "bus",
+      "bus": null,
+      "has_bus_details": null,
+      "prices": {
+        "currency": "EUR",
+        "total": 3898,
+        "categories": {
+          "adult": 3898
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 3898,
+          "fees": 0,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T09:40:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 10443,
+          "geohash": "ezzx534fd",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T17:35:00",
+          "departure_time": "2022-04-20T21:30:00",
+          "duration": 235,
+          "departure_operator_id": null,
+          "location_id": 130,
+          "geohash": "u05kmb64h",
+          "name": "Lyon Perrache",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-21T04:05:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 5641,
+          "geohash": "u09yf605d",
+          "name": "Paris CDG Airport",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "NjBkNzExMGM6OTExY2E2MTg": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 125,
+      "has_transfers": false,
+      "id": "NjBkNzExMGM6OTExY2E2MTg",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T06:46:00",
+      "arrival_time": "2022-04-20T08:51:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 18956,
+        "categories": {
+          "adult": 18547
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 18547,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T06:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T08:51:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "MjhkMzE4Zjk6N2IxOGVlMTg": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 125,
+      "has_transfers": false,
+      "id": "MjhkMzE4Zjk6N2IxOGVlMTg",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T06:46:00",
+      "arrival_time": "2022-04-20T08:51:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 6769,
+        "categories": {
+          "adult": 6360
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 6360,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T06:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T08:51:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "YmFhMjk2OTU6MmZhYTk1NmQ": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 125,
+      "has_transfers": false,
+      "id": "YmFhMjk2OTU6MmZhYTk1NmQ",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T06:46:00",
+      "arrival_time": "2022-04-20T08:51:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 5178,
+        "categories": {
+          "adult": 4769
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 4769,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T06:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T08:51:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "Zjc4NjhmZWE6ODMxMmM2MzU": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 127,
+      "has_transfers": false,
+      "id": "Zjc4NjhmZWE6ODMxMmM2MzU",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T07:12:00",
+      "arrival_time": "2022-04-20T09:19:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 18956,
+        "categories": {
+          "adult": 18547
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 18547,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T07:12:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T09:19:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "ZGU0N2FjZmY6NmQwZjBlMzU": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 127,
+      "has_transfers": false,
+      "id": "ZGU0N2FjZmY6NmQwZjBlMzU",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T07:12:00",
+      "arrival_time": "2022-04-20T09:19:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 6769,
+        "categories": {
+          "adult": 6360
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 6360,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T07:12:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T09:19:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "MjNlOGQyZDI6YjYyZWQ5YzA": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 127,
+      "has_transfers": false,
+      "id": "MjNlOGQyZDI6YjYyZWQ5YzA",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T07:12:00",
+      "arrival_time": "2022-04-20T09:19:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 5602,
+        "categories": {
+          "adult": 5193
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 5193,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T07:12:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T09:19:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "ZjE2ODg0YWM6YjgwMjY3ZjE": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 132,
+      "has_transfers": false,
+      "id": "ZjE2ODg0YWM6YjgwMjY3ZjE",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T07:46:00",
+      "arrival_time": "2022-04-20T09:58:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 18956,
+        "categories": {
+          "adult": 18547
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 18547,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T07:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T09:58:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "ZTVjOGY1MTk6YTFmZWFmZjE": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 132,
+      "has_transfers": false,
+      "id": "ZTVjOGY1MTk6YTFmZWFmZjE",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T07:46:00",
+      "arrival_time": "2022-04-20T09:58:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 6769,
+        "categories": {
+          "adult": 6360
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 6360,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T07:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T09:58:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "NjExMmE1NzM6MjQ0YTE0MDQ": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 132,
+      "has_transfers": false,
+      "id": "NjExMmE1NzM6MjQ0YTE0MDQ",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T07:46:00",
+      "arrival_time": "2022-04-20T09:58:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 6133,
+        "categories": {
+          "adult": 5723
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 5723,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T07:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T09:58:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "ZmRjOWQxZWI6NDQ5MWRlZGM": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 126,
+      "has_transfers": false,
+      "id": "ZmRjOWQxZWI6NDQ5MWRlZGM",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T08:46:00",
+      "arrival_time": "2022-04-20T10:52:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 18956,
+        "categories": {
+          "adult": 18547
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 18547,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T08:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T10:52:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "YWZmODcxODoyZThlMjZkYw": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 126,
+      "has_transfers": false,
+      "id": "YWZmODcxODoyZThlMjZkYw",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T08:46:00",
+      "arrival_time": "2022-04-20T10:52:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 6239,
+        "categories": {
+          "adult": 5829
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 5829,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T08:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T10:52:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "ZTE0NzU5MTI6Mjg0OGE1YTk": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 126,
+      "has_transfers": false,
+      "id": "ZTE0NzU5MTI6Mjg0OGE1YTk",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T08:46:00",
+      "arrival_time": "2022-04-20T10:52:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 5178,
+        "categories": {
+          "adult": 4769
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 4769,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T08:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T10:52:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "YjZlODY0ODY6YjJhOGRmZmM": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 126,
+      "has_transfers": false,
+      "id": "YjZlODY0ODY6YjJhOGRmZmM",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T09:46:00",
+      "arrival_time": "2022-04-20T11:52:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 18956,
+        "categories": {
+          "adult": 18547
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 18547,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T09:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T11:52:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "MjBmMmY2YjU6OWNhNTI3ZmM": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 126,
+      "has_transfers": false,
+      "id": "MjBmMmY2YjU6OWNhNTI3ZmM",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T09:46:00",
+      "arrival_time": "2022-04-20T11:52:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 6239,
+        "categories": {
+          "adult": 5829
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 5829,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T09:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T11:52:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "NWE2Mjc4NWU6ZTViNTkxMDk": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 126,
+      "has_transfers": false,
+      "id": "NWE2Mjc4NWU6ZTViNTkxMDk",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T09:46:00",
+      "arrival_time": "2022-04-20T11:52:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 5602,
+        "categories": {
+          "adult": 5193
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 5193,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T09:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T11:52:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "YmQzZGU1YTU6ZTMwNzEzNzE": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 128,
+      "has_transfers": false,
+      "id": "YmQzZGU1YTU6ZTMwNzEzNzE",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T10:46:00",
+      "arrival_time": "2022-04-20T12:54:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 18956,
+        "categories": {
+          "adult": 18547
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 18547,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T10:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T12:54:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "YjE1Y2IyMzY6Y2QwMzViNzE": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 128,
+      "has_transfers": false,
+      "id": "YjE1Y2IyMzY6Y2QwMzViNzE",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T10:46:00",
+      "arrival_time": "2022-04-20T12:54:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 7828,
+        "categories": {
+          "adult": 7419
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 7419,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T10:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T12:54:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "ZjYwOThhZGE6ZjliMTk5ODQ": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 128,
+      "has_transfers": false,
+      "id": "ZjYwOThhZGE6ZjliMTk5ODQ",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T10:46:00",
+      "arrival_time": "2022-04-20T12:54:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 6133,
+        "categories": {
+          "adult": 5723
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 5723,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T10:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T12:54:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "M2RlYzllNDk6YTZjNWJiZDY": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 127,
+      "has_transfers": false,
+      "id": "M2RlYzllNDk6YTZjNWJiZDY",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T15:46:00",
+      "arrival_time": "2022-04-20T17:53:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 18956,
+        "categories": {
+          "adult": 18547
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 18547,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T15:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T17:53:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "YmUwNTM4MTg6OTBjMjAzZDY": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 127,
+      "has_transfers": false,
+      "id": "YmUwNTM4MTg6OTBjMjAzZDY",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T15:46:00",
+      "arrival_time": "2022-04-20T17:53:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 5815,
+        "categories": {
+          "adult": 5405
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 5405,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T15:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T17:53:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "YmQ1MzI5YjA6ZWE3MjM1YTM": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 127,
+      "has_transfers": false,
+      "id": "YmQ1MzI5YjA6ZWE3MjM1YTM",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T15:46:00",
+      "arrival_time": "2022-04-20T17:53:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 5178,
+        "categories": {
+          "adult": 4769
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 4769,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T15:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T17:53:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "ZmE5OWNiMDM6OWUxYWYwN2I": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 132,
+      "has_transfers": false,
+      "id": "ZmE5OWNiMDM6OWUxYWYwN2I",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T17:12:00",
+      "arrival_time": "2022-04-20T19:24:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 18956,
+        "categories": {
+          "adult": 18547
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 18547,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T17:12:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T19:24:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "OTBjZDE1MTI6ODgxNzM4N2I": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 132,
+      "has_transfers": false,
+      "id": "OTBjZDE1MTI6ODgxNzM4N2I",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T17:12:00",
+      "arrival_time": "2022-04-20T19:24:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 5815,
+        "categories": {
+          "adult": 5405
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 5405,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T17:12:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T19:24:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "Y2NiODU1OTc6NDhhYjJjMGU": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 132,
+      "has_transfers": false,
+      "id": "Y2NiODU1OTc6NDhhYjJjMGU",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T17:12:00",
+      "arrival_time": "2022-04-20T19:24:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 4437,
+        "categories": {
+          "adult": 4028
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 4028,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T17:12:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T19:24:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "N2VmYjlmY2Y6MmVlNzc4NWY": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 130,
+      "has_transfers": false,
+      "id": "N2VmYjlmY2Y6MmVlNzc4NWY",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T17:46:00",
+      "arrival_time": "2022-04-20T19:56:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 18956,
+        "categories": {
+          "adult": 18547
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 18547,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T17:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T19:56:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "ODIyMjA0ZDQ6MThlM2MwNWY": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 130,
+      "has_transfers": false,
+      "id": "ODIyMjA0ZDQ6MThlM2MwNWY",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T17:46:00",
+      "arrival_time": "2022-04-20T19:56:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 4331,
+        "categories": {
+          "adult": 3922
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 3922,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T17:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T19:56:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "OTQ5NzdlM2I6YmJiM2IwYWE": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 130,
+      "has_transfers": false,
+      "id": "OTQ5NzdlM2I6YmJiM2IwYWE",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T17:46:00",
+      "arrival_time": "2022-04-20T19:56:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 3695,
+        "categories": {
+          "adult": 3286
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 3286,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T17:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T19:56:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "YTE1ZjhjMDY6NDFmN2JmNA": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 132,
+      "has_transfers": false,
+      "id": "YTE1ZjhjMDY6NDFmN2JmNA",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T18:46:00",
+      "arrival_time": "2022-04-20T20:58:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 18956,
+        "categories": {
+          "adult": 18547
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 18547,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T18:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T20:58:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "Njg5Mjk5NTc6ZWUxYmMzZjQ": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 132,
+      "has_transfers": false,
+      "id": "Njg5Mjk5NTc6ZWUxYmMzZjQ",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T18:46:00",
+      "arrival_time": "2022-04-20T20:58:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 5815,
+        "categories": {
+          "adult": 5405
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 5405,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T18:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T20:58:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "MzRjMWE0NWY6MjM2YWFjODE": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 132,
+      "has_transfers": false,
+      "id": "MzRjMWE0NWY6MjM2YWFjODE",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T18:46:00",
+      "arrival_time": "2022-04-20T20:58:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 5178,
+        "categories": {
+          "adult": 4769
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 4769,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T18:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T20:58:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "MmM4YzQxNjE6NGYxZWRjOWU": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 126,
+      "has_transfers": false,
+      "id": "MmM4YzQxNjE6NGYxZWRjOWU",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T19:46:00",
+      "arrival_time": "2022-04-20T21:52:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 18956,
+        "categories": {
+          "adult": 18547
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 18547,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T19:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T21:52:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "NmY1YWYyM2E6MzkxYjI0OWU": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 126,
+      "has_transfers": false,
+      "id": "NmY1YWYyM2E6MzkxYjI0OWU",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T19:46:00",
+      "arrival_time": "2022-04-20T21:52:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 4331,
+        "categories": {
+          "adult": 3922
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 3922,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T19:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T21:52:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    },
+    "OTg5YTA2YjU6N2U2YThmNmI": {
+      "arrival_timezone": "Europe/Paris",
+      "available_seats": null,
+      "vehicle": null,
+      "departure_timezone": "Europe/Paris",
+      "destination_location_id": 70737,
+      "duration": 126,
+      "has_transfers": false,
+      "id": "OTg5YTA2YjU6N2U2YThmNmI",
+      "operator_id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "origin_location_id": 72322,
+      "departure_time": "2022-04-20T19:46:00",
+      "arrival_time": "2022-04-20T21:52:00",
+      "vehicle_type": "train",
+      "prices": {
+        "currency": "EUR",
+        "total": 3695,
+        "categories": {
+          "adult": 3286
+        },
+        "discount": 0,
+        "breakdown": {
+          "base": 3286,
+          "fees": 409,
+          "taxes": 0,
+          "discount": 0
+        }
+      },
+      "trip_stops": [
+        {
+          "arrival_time": null,
+          "departure_time": "2022-04-20T19:46:00",
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 72322,
+          "geohash": "ezzx51em5",
+          "name": "Bordeaux Saint-Jean",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        },
+        {
+          "arrival_time": "2022-04-20T21:52:00",
+          "departure_time": null,
+          "duration": 0,
+          "departure_operator_id": null,
+          "location_id": 70737,
+          "geohash": "u09tudz1b",
+          "name": "Paris Montparnasse",
+          "transfer": false,
+          "service_name": null,
+          "service_number": null
+        }
+      ]
+    }
+  },
+  "opeartors": [
+    {
+      "id": "1ab559e2-f6f8-4704-b3b8-69e28cbcd62b",
+      "name": "Alsa Internacional SLU",
+      "url": "https://www.movelia.es/",
+      "logo_url": "https://busbud.imgix.net/operator-logos/alsa_2020.jpeg?h={height}&w={width}&auto=format&fit=fill&bg=0FFF",
+      "display_name": "Alsa Internacional SLU",
+      "default_vehicle_type": "bus",
+      "source": "movelia"
+    },
+    {
+      "id": "16c680b1-ae30-43d0-8dae-61e7a21f119e",
+      "name": "FlixBus",
+      "url": "https://www.flixbus.com/",
+      "logo_url": "https://busbud.imgix.net/operator-logos/logo_flixbus.png?h={height}&w={width}&auto=format&fit=fill&bg=0FFF",
+      "display_name": "FlixBus",
+      "default_vehicle_type": "bus",
+      "source": "flixbus"
+    },
+    {
+      "id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+      "name": "TGV inOui",
+      "url": "",
+      "logo_url": "https://busbud.imgix.net/operator-logos/tgv-inoui.png?h={height}&w={width}&auto=format&fit=fill&bg=0FFF",
+      "display_name": "TGV inOui",
+      "default_vehicle_type": "train",
+      "source": "raileurope"
+    }
+  ],
+  "locations": [
+    {
+      "id": 70737,
+      "city_id": "375dd587-9001-acbd-84a4-683ded85a517",
+      "name": "Paris Montparnasse",
+      "address": ["Montparnasse", "75014 Paris", "France"],
+      "type": "train_station",
+      "lat": 48.8386736828709,
+      "lon": 2.3167473610077,
+      "geohash": "u09tudz1b",
+      "created_by": "manual"
+    },
+    {
+      "id": 12242,
+      "city_id": "375dd587-9001-acbd-84a4-683ded85a517",
+      "name": "Bercy Seine",
+      "address": ["210 Quai de Bercy", "75012 Paris", "France"],
+      "type": "bus_stop",
+      "lat": 48.8353111,
+      "lon": 2.3805187,
+      "geohash": "u09ty4jqq",
+      "created_by": "manual"
+    },
+    {
+      "id": 93866,
+      "city_id": "375dd587-9001-acbd-84a4-683ded709e9d",
+      "name": "Bordeaux",
+      "address": ["BORDEAUX", "140 Rue Terres de Borde", "33800 Bordeaux"],
+      "type": "other",
+      "lat": 44.8227414,
+      "lon": -0.5544432,
+      "geohash": "ezzwgrsr2",
+      "created_by": "manual"
+    },
+    {
+      "id": 10443,
+      "city_id": "375dd587-9001-acbd-84a4-683ded709e9d",
+      "name": "Gare SNCF de Bordeaux - Parking Descas",
+      "address": [
+        "Gare Routière De Bordeaux, Parking Descas",
+        "33800 Bordeaux",
+        "France"
+      ],
+      "type": "bus_station",
+      "lat": 44.8301593022096,
+      "lon": -0.556434662704532,
+      "geohash": "ezzx534fd",
+      "created_by": "manual"
+    },
+    {
+      "id": 5641,
+      "city_id": "375dd587-9001-acbd-84a4-683ded85a517",
+      "name": "Aéroport CDG",
+      "address": ["Rue d'Athènes", "93290 Tremblay-en-France", "France"],
+      "type": "airport",
+      "lat": 49.0106468,
+      "lon": 2.5599376,
+      "geohash": "u09yf605d",
+      "created_by": "manual"
+    }
+  ]
+}

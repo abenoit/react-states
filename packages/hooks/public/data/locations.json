@@ -1,0 +1,61 @@
+[
+  {
+    "id": 70737,
+    "city_id": "375dd587-9001-acbd-84a4-683ded85a517",
+    "name": "Paris Montparnasse",
+    "address": ["Montparnasse", "75014 Paris", "France"],
+    "type": "train_station",
+    "lat": 48.8386736828709,
+    "lon": 2.3167473610077,
+    "geohash": "u09tudz1b",
+    "created_by": "manual"
+  },
+  {
+    "id": 12242,
+    "city_id": "375dd587-9001-acbd-84a4-683ded85a517",
+    "name": "Bercy Seine",
+    "address": ["210 Quai de Bercy", "75012 Paris", "France"],
+    "type": "bus_stop",
+    "lat": 48.8353111,
+    "lon": 2.3805187,
+    "geohash": "u09ty4jqq",
+    "created_by": "manual"
+  },
+  {
+    "id": 93866,
+    "city_id": "375dd587-9001-acbd-84a4-683ded709e9d",
+    "name": "Bordeaux",
+    "address": ["BORDEAUX", "140 Rue Terres de Borde", "33800 Bordeaux"],
+    "type": "other",
+    "lat": 44.8227414,
+    "lon": -0.5544432,
+    "geohash": "ezzwgrsr2",
+    "created_by": "manual"
+  },
+  {
+    "id": 10443,
+    "city_id": "375dd587-9001-acbd-84a4-683ded709e9d",
+    "name": "Gare SNCF de Bordeaux - Parking Descas",
+    "address": [
+      "Gare Routière De Bordeaux, Parking Descas",
+      "33800 Bordeaux",
+      "France"
+    ],
+    "type": "bus_station",
+    "lat": 44.8301593022096,
+    "lon": -0.556434662704532,
+    "geohash": "ezzx534fd",
+    "created_by": "manual"
+  },
+  {
+    "id": 5641,
+    "city_id": "375dd587-9001-acbd-84a4-683ded85a517",
+    "name": "Aéroport CDG",
+    "address": ["Rue d'Athènes", "93290 Tremblay-en-France", "France"],
+    "type": "airport",
+    "lat": 49.0106468,
+    "lon": 2.5599376,
+    "geohash": "u09yf605d",
+    "created_by": "manual"
+  }
+]

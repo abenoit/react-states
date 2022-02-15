@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1ab559e2-f6f8-4704-b3b8-69e28cbcd62b",
+    "name": "Alsa Internacional SLU",
+    "url": "https://www.movelia.es/",
+    "logo_url": "https://busbud.imgix.net/operator-logos/alsa_2020.jpeg?h={height}&w={width}&auto=format&fit=fill&bg=0FFF",
+    "display_name": "Alsa Internacional SLU",
+    "default_vehicle_type": "bus"
+  },
+  {
+    "id": "16c680b1-ae30-43d0-8dae-61e7a21f119e",
+    "name": "FlixBus",
+    "url": "https://www.flixbus.com/",
+    "logo_url": "https://busbud.imgix.net/operator-logos/logo_flixbus.png?h={height}&w={width}&auto=format&fit=fill&bg=0FFF",
+    "display_name": "FlixBus",
+    "default_vehicle_type": "bus"
+  },
+  {
+    "id": "7b7a8d2f-fbb9-401f-88da-95217e8e244e",
+    "name": "TGV inOui",
+    "url": "",
+    "logo_url": "https://busbud.imgix.net/operator-logos/tgv-inoui.png?h={height}&w={width}&auto=format&fit=fill&bg=0FFF",
+    "display_name": "TGV inOui",
+    "default_vehicle_type": "train"
+  }
+]
