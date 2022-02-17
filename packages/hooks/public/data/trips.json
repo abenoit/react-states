@@ -2041,7 +2041,7 @@
       ]
     }
   },
-  "opeartors": [
+  "operators": [
     {
       "id": "1ab559e2-f6f8-4704-b3b8-69e28cbcd62b",
       "name": "Alsa Internacional SLU",
@@ -2079,8 +2079,17 @@
       "type": "train_station",
       "lat": 48.8386736828709,
       "lon": 2.3167473610077,
-      "geohash": "u09tudz1b",
-      "created_by": "manual"
+      "geohash": "u09tudz1b"
+    },
+    {
+      "id": 72322,
+      "city_id": "375dd587-9001-acbd-84a4-683ded709e9d",
+      "name": "Bordeaux Saint-Jean",
+      "address": ["14 Rue Gaspard Philippe", "33800 Bordeaux", "France"],
+      "type": "other",
+      "lat": 44.83333,
+      "lon": -0.56667,
+      "geohash": "ezzx51em5"
     },
     {
       "id": 12242,
@@ -2090,8 +2099,7 @@
       "type": "bus_stop",
       "lat": 48.8353111,
       "lon": 2.3805187,
-      "geohash": "u09ty4jqq",
-      "created_by": "manual"
+      "geohash": "u09ty4jqq"
     },
     {
       "id": 93866,
@@ -2101,8 +2109,7 @@
       "type": "other",
       "lat": 44.8227414,
       "lon": -0.5544432,
-      "geohash": "ezzwgrsr2",
-      "created_by": "manual"
+      "geohash": "ezzwgrsr2"
     },
     {
       "id": 10443,
@@ -2116,8 +2123,7 @@
       "type": "bus_station",
       "lat": 44.8301593022096,
       "lon": -0.556434662704532,
-      "geohash": "ezzx534fd",
-      "created_by": "manual"
+      "geohash": "ezzx534fd"
     },
     {
       "id": 5641,
@@ -2127,8 +2133,7 @@
       "type": "airport",
       "lat": 49.0106468,
       "lon": 2.5599376,
-      "geohash": "u09yf605d",
-      "created_by": "manual"
+      "geohash": "u09yf605d"
     }
   ]
 }

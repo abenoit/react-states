@@ -6,21 +6,32 @@ import LocationOn from "@mui/icons-material/LocationOn";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
+import { formatTime, findLocationById, findOperatorById } from "../utils";
+import { Operator } from "../operator";
 import { useStyles } from "./trip.styles";
 
 interface Props {
-  data: Trip;
+  trip: Trip;
   locations: Locations;
   operators: Operators;
-  onSelect: () => void;
+  onSelect: (trip: Trip) => void;
 }
 
 interface TripProp {
   trip: Trip;
+  locations: Locations;
+  operators: Operators;
 }
 
-const TripSummary: React.FC<TripProp> = ({ trip }) => {
+interface TripSummaryProps {
+  trip: Trip;
+  locations: Locations;
+}
+
+const TripSummary: React.FC<TripSummaryProps> = ({ trip, locations }) => {
   const classes = useStyles();
+  const origin = findLocationById(trip.origin_location_id, locations);
+  const destination = findLocationById(trip.destination_location_id, locations);
 
   return (
     <Stack direction="column">
@@ -32,10 +43,15 @@ const TripSummary: React.FC<TripProp> = ({ trip }) => {
           fontWeight="bold"
           pl={2}
         >
-          {trip.departureTime}
+          {formatTime(trip.departure_time)}
         </Typography>
-        <Typography variant="body1" color="text.secondary" pl={2}>
-          Origin
+        <Typography
+          variant="body1"
+          color="text.secondary"
+          noWrap
+          className={classes.origin}
+        >
+          {origin?.name}
         </Typography>
       </Stack>
       <div className={classes.line} />
@@ -47,31 +63,53 @@ const TripSummary: React.FC<TripProp> = ({ trip }) => {
           fontWeight="bold"
           pl={2}
         >
-          {trip.arrivalTime}
+          {formatTime(trip.arrival_time)}
         </Typography>
         <Typography variant="body1" color="text.primary" pl={2}>
-          Destination
+          {destination?.name}
         </Typography>
       </Stack>
     </Stack>
   );
 };
 
-const TripCardLayout: React.FC<TripProp> = ({ trip, children }) => (
-  <Card sx={{ maxWidth: 500 }}>
-    <CardContent>
-      <Stack direction="row" justifyContent="space-between" alignItems="center">
-        <TripSummary trip={trip} />
-        {children}
-      </Stack>
-    </CardContent>
-  </Card>
-);
+const TripCardLayout: React.FC<TripProp> = ({
+  trip,
+  operators,
+  locations,
+  children,
+}) => {
+  const operator = findOperatorById(trip.operator_id, operators);
 
-export const Trip: React.FC<Props> = ({ data, onSelect }) => {
   return (
-    <TripCardLayout trip={data}>
-      <Button variant="contained" onClick={onSelect}>
+    <Card sx={{ maxWidth: 600 }}>
+      <CardContent>
+        <Stack direction="column" spacing={2}>
+          {operator && <Operator operator={operator} />}
+
+          <Stack
+            direction="row"
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            <TripSummary trip={trip} locations={locations} />
+            {children}
+          </Stack>
+        </Stack>
+      </CardContent>
+    </Card>
+  );
+};
+
+export const Trip: React.FC<Props> = ({
+  trip,
+  operators,
+  locations,
+  onSelect,
+}) => {
+  return (
+    <TripCardLayout trip={trip} operators={operators} locations={locations}>
+      <Button variant="contained" onClick={() => onSelect(trip)}>
         Select
       </Button>
     </TripCardLayout>

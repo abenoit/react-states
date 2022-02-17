@@ -4,7 +4,8 @@ import { Trip } from "../components/trip";
 import { TripDetailsDrawer } from "../components/trip-details-drawer";
 
 export const App = () => {
-  const [areDetailsOpened, openDetails] = useState(false);
+  // const [areDetailsOpened, openDetails] = useState(false);
+  const [selectedTrip, setSelectedTrip] = useState<Trip | undefined>();
   const [tripsDataset, setTrips] = useState<DataSet | null>(null);
 
   useEffect(() => {
@@ -18,20 +19,28 @@ export const App = () => {
 
   return (
     <AppLayout>
-      <TripDetailsDrawer
-        isOpened={areDetailsOpened}
-        onClose={() => openDetails(false)}
-      />
-      {tripsDataset &&
-        Object.values<Trip>(tripsDataset.trips).map((trip) => (
-          <Trip
-            key={trip.id}
-            onSelect={() => openDetails(true)}
-            data={trip}
+      {!tripsDataset ? (
+        <div>Loading...</div>
+      ) : (
+        <>
+          <TripDetailsDrawer
+            selectedTrip={selectedTrip}
+            isOpened={!!selectedTrip}
+            onClose={() => setSelectedTrip(undefined)}
             operators={tripsDataset.operators}
             locations={tripsDataset.locations}
           />
-        ))}
+          {Object.values<Trip>(tripsDataset.trips).map((trip) => (
+            <Trip
+              key={trip.id}
+              onSelect={setSelectedTrip}
+              trip={trip}
+              operators={tripsDataset.operators}
+              locations={tripsDataset.locations}
+            />
+          ))}
+        </>
+      )}
     </AppLayout>
   );
 };

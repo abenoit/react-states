@@ -1,6 +1,10 @@
 import { makeStyles } from "@mui/styles";
 
 export const useStyles = makeStyles({
+  origin: {
+    paddingLeft: "16px",
+    maxWidth: "300px",
+  },
   line: {
     position: "relative",
     height: "10px",
