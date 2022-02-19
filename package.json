@@ -11,8 +11,8 @@
     "build": "lerna run build",
     "start": "lerna run start --stream",
     "start:drilldown": "lerna exec --scope '@demo/drilldown' -- yarn run start --stream",
-    "start:reducer": "lerna exec --scope '@demo/hooks' -- yarn run start --stream",
-    "start:reducer-context": "lerna exec --scope '@demo/hooks' -- yarn run start --stream",
+    "start:reducer": "lerna exec --scope '@demo/reducer' -- yarn run start --stream",
+    "start:reducer-context": "lerna exec --scope '@demo/reducer-context' -- yarn run start --stream",
     "start:redux": "lerna exec --scope '@demo/redux' -- yarn run start --stream"
   },
   "devDependencies": {
