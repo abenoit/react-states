@@ -1,17 +1,36 @@
-import { useEffect, useState } from "react";
+import { useEffect, useReducer } from "react";
 import { AppLayout } from "../components/app-layout";
 import { Trip } from "../components/trip";
 import { TripDetailsDrawer } from "../components/trip-details-drawer";
 
+interface State {
+  selectedTrip?: Trip;
+  trips?: Trips;
+}
+
+const reducer = (state: State, action) => {
+  switch (action.type) {
+    case "tripSelected":
+      return { ...state, selectedTrip: action.selectedTrip };
+    case "tripsFetched":
+      return { ...state, trips: action.data };
+  }
+};
+
+const initialState = {
+  selectedTrip: undefined,
+  trips: undefined,
+};
+
 export const App = () => {
-  // const [areDetailsOpened, openDetails] = useState(false);
-  const [selectedTrip, setSelectedTrip] = useState<Trip | undefined>();
-  const [tripsDataset, setTrips] = useState<DataSet | null>(null);
+  const [state, dispatch] = useReducer(reducer, initialState);
+  const { selectedTrip, trips } = state;
 
   useEffect(() => {
     const getTrips = async () => {
       const res = await fetch("../../data/trips.json");
-      setTrips(await res.json());
+      const data = await res.json();
+      dispatch({ type: "tripsFetched", data });
     };
 
     getTrips();
@@ -19,24 +38,28 @@ export const App = () => {
 
   return (
     <AppLayout>
-      {!tripsDataset ? (
+      {!trips ? (
         <div>Loading...</div>
       ) : (
         <>
           <TripDetailsDrawer
             selectedTrip={selectedTrip}
             isOpened={!!selectedTrip}
-            onClose={() => setSelectedTrip(undefined)}
-            operators={tripsDataset.operators}
-            locations={tripsDataset.locations}
+            onClose={() =>
+              dispatch({ type: "tripSelected", selectedTrip: undefined })
+            }
+            operators={trips.operators}
+            locations={trips.locations}
           />
-          {Object.values<Trip>(tripsDataset.trips).map((trip) => (
+          {Object.values<Trip>(trips.trips).map((trip) => (
             <Trip
               key={trip.id}
-              onSelect={setSelectedTrip}
+              onSelect={() =>
+                dispatch({ type: "tripSelected", selectedTrip: trip })
+              }
               trip={trip}
-              operators={tripsDataset.operators}
-              locations={tripsDataset.locations}
+              operators={trips.operators}
+              locations={trips.locations}
             />
           ))}
         </>

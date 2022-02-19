@@ -10,9 +10,10 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "start": "lerna run start --stream",
-    "exec:hooks": "lerna exec --scope 'hooks'",
-    "start:hooks": "yarn exec:hooks -- yarn run start --stream",
-    "exec:redux": "lerna exec --scope 'redux'",
+    "exec:drilldown": "lerna exec --scope '@demo/drilldown'",
+    "start:drilldown": "yarn exec:drilldown -- yarn run start --stream",
+    "start:hooks": "lerna exec --scope '@demo/hooks' -- yarn run start --stream",
+    "exec:redux": "lerna exec --scope '@demo/redux'",
     "start:redux": "yarn exec:redux -- yarn run start --stream"
   },
   "devDependencies": {
