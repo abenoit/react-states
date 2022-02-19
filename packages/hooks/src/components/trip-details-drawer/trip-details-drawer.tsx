@@ -2,26 +2,18 @@ import Drawer from "@mui/material/Drawer";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
-import { useStyles } from "./trip-details-drawer.styles";
+import { formatTime, findLocationById, findOperatorById } from "../utils";
+import { StateContext } from "../../context";
 import { Operator } from "../operator";
 import { TripStops } from "../trip-stops";
-import { formatTime, findLocationById, findOperatorById } from "../utils";
+import { useStyles } from "./trip-details-drawer.styles";
+import { useContext } from "react";
 
-interface Props {
-  isOpened?: boolean;
-  onClose: () => void;
-  selectedTrip: Trip | undefined;
-  locations: Locations;
-  operators: Operators;
-}
-
-export const TripDetailsDrawer: React.FC<Props> = ({
-  selectedTrip,
-  isOpened = false,
-  operators,
-  locations,
-  onClose,
-}) => {
+export const TripDetailsDrawer: React.FC = () => {
+  const {
+    selectTrip,
+    state: { selectedTrip, locations, operators },
+  } = useContext(StateContext);
   const classes = useStyles();
 
   if (!selectedTrip) return null;
@@ -34,7 +26,11 @@ export const TripDetailsDrawer: React.FC<Props> = ({
   const operator = findOperatorById(selectedTrip.operator_id, operators);
 
   return (
-    <Drawer anchor="right" open={isOpened} onClose={onClose}>
+    <Drawer
+      anchor="right"
+      open={!!selectTrip}
+      onClose={() => selectTrip(undefined)}
+    >
       <Stack spacing={3} p={2}>
         {operator && <Operator size="xl" operator={operator} />}
         <Stack direction="row" alignItems="center" className={classes.root}>

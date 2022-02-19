@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -7,14 +7,12 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
 import { formatTime, findLocationById, findOperatorById } from "../utils";
+import { StateContext } from "../../context";
 import { Operator } from "../operator";
 import { useStyles } from "./trip.styles";
 
 interface Props {
   trip: Trip;
-  locations: Locations;
-  operators: Operators;
-  onSelect: (trip: Trip) => void;
 }
 
 interface TripProp {
@@ -101,15 +99,15 @@ const TripCardLayout: React.FC<TripProp> = ({
   );
 };
 
-export const Trip: React.FC<Props> = ({
-  trip,
-  operators,
-  locations,
-  onSelect,
-}) => {
+export const Trip: React.FC<Props> = ({ trip }) => {
+  const {
+    selectTrip,
+    state: { operators, locations },
+  } = useContext(StateContext);
+
   return (
     <TripCardLayout trip={trip} operators={operators} locations={locations}>
-      <Button variant="contained" onClick={() => onSelect(trip)}>
+      <Button variant="contained" onClick={() => selectTrip(trip)}>
         Select
       </Button>
     </TripCardLayout>
