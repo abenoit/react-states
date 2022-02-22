@@ -9,7 +9,6 @@ import { fetchTrips } from "../store/trips";
 export const App = () => {
   const dispatch = useDispatch();
   const trips = useSelector<Trips | null>((state) => state.trips);
-  console.log("trips", trips);
 
   useEffect(() => {
     dispatch(fetchTrips());

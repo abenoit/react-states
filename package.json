@@ -13,7 +13,8 @@
     "start:drilldown": "lerna exec --scope '@demo/drilldown' -- yarn run start --stream",
     "start:reducer": "lerna exec --scope '@demo/reducer' -- yarn run start --stream",
     "start:reducer-context": "lerna exec --scope '@demo/reducer-context' -- yarn run start --stream",
-    "start:redux": "lerna exec --scope '@demo/redux' -- yarn run start --stream"
+    "start:redux": "lerna exec --scope '@demo/redux' -- yarn run start --stream",
+    "start:recoil": "lerna exec --scope '@demo/recoil' -- yarn run start --stream"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
