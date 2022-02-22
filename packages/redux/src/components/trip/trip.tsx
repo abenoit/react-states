@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -6,30 +6,41 @@ import LocationOn from "@mui/icons-material/LocationOn";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
-import { formatTime, findLocationById, findOperatorById } from "../utils";
-import { StateContext } from "../../context";
+import { formatTime } from "../utils";
 import { Operator } from "../operator";
 import { useStyles } from "./trip.styles";
+import { useDispatch, useSelector } from "../../store/hooks";
+import { selectTrip } from "../../store/selectedTrip";
 
-interface Props {
-  trip: Trip;
+import {
+  getTripById,
+  getLocationByTripId,
+  getOperatorByTripId,
+} from "../../store/selectors";
+
+export interface Props {
+  tripId: TripId;
 }
 
 interface TripProp {
   trip: Trip;
-  locations: Locations;
-  operators: Operators;
+  departure_location: Location;
+  arrival_location: Location;
+  operator: Operator;
 }
 
 interface TripSummaryProps {
   trip: Trip;
-  locations: Locations;
+  departure_location: Location;
+  arrival_location: Location;
 }
 
-const TripSummary: React.FC<TripSummaryProps> = ({ trip, locations }) => {
+const TripSummary: React.FC<TripSummaryProps> = ({
+  trip,
+  departure_location,
+  arrival_location,
+}) => {
   const classes = useStyles();
-  const origin = findLocationById(trip.origin_location_id, locations);
-  const destination = findLocationById(trip.destination_location_id, locations);
 
   return (
     <Stack direction="column">
@@ -49,7 +60,7 @@ const TripSummary: React.FC<TripSummaryProps> = ({ trip, locations }) => {
           noWrap
           className={classes.origin}
         >
-          {origin?.name}
+          {departure_location?.name}
         </Typography>
       </Stack>
       <div className={classes.line} />
@@ -64,7 +75,7 @@ const TripSummary: React.FC<TripSummaryProps> = ({ trip, locations }) => {
           {formatTime(trip.arrival_time)}
         </Typography>
         <Typography variant="body1" color="text.primary" pl={2}>
-          {destination?.name}
+          {arrival_location?.name}
         </Typography>
       </Stack>
     </Stack>
@@ -73,12 +84,11 @@ const TripSummary: React.FC<TripSummaryProps> = ({ trip, locations }) => {
 
 const TripCardLayout: React.FC<TripProp> = ({
   trip,
-  operators,
-  locations,
+  operator,
+  departure_location,
+  arrival_location,
   children,
 }) => {
-  const operator = findOperatorById(trip.operator_id, operators);
-
   return (
     <Card sx={{ maxWidth: 600 }}>
       <CardContent>
@@ -90,7 +100,11 @@ const TripCardLayout: React.FC<TripProp> = ({
             justifyContent="space-between"
             alignItems="center"
           >
-            <TripSummary trip={trip} locations={locations} />
+            <TripSummary
+              trip={trip}
+              arrival_location={arrival_location}
+              departure_location={departure_location}
+            />
             {children}
           </Stack>
         </Stack>
@@ -99,15 +113,25 @@ const TripCardLayout: React.FC<TripProp> = ({
   );
 };
 
-export const Trip: React.FC<Props> = ({ trip }) => {
-  const {
-    selectTrip,
-    state: { operators, locations },
-  } = useContext(StateContext);
+export const Trip: React.FC<Props> = ({ tripId }) => {
+  const dispatch = useDispatch();
+
+  const trip = useSelector<Trip>((state) => getTripById(state, tripId))!;
+  const { departure, arrival } = useSelector((state) =>
+    getLocationByTripId(state, tripId)
+  )!;
+  const operator = useSelector<Operator>(
+    (state) => getOperatorByTripId(state, tripId)!
+  )!;
 
   return (
-    <TripCardLayout trip={trip} operators={operators} locations={locations}>
-      <Button variant="contained" onClick={() => selectTrip(trip)}>
+    <TripCardLayout
+      trip={trip}
+      operator={operator}
+      arrival_location={arrival!}
+      departure_location={departure!}
+    >
+      <Button variant="contained" onClick={() => dispatch(selectTrip(trip))}>
         Select
       </Button>
     </TripCardLayout>

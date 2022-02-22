@@ -33,7 +33,7 @@ declare interface Stop {
   duration: number;
 }
 
-declare type Trips = { [id as string]: Trip };
+declare type Trips = { [id as TripId]: Trip };
 
 /**
  * Locations

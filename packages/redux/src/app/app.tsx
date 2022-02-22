@@ -1,24 +1,18 @@
-import { useEffect, useContext } from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "../store/hooks";
 
 import { AppLayout } from "../components/app-layout";
 import { Trip } from "../components/trip";
 import { TripDetailsDrawer } from "../components/trip-details-drawer";
-import { StateContext } from "../context";
+import { fetchTrips } from "../store/trips";
 
 export const App = () => {
-  const {
-    state: { trips },
-    fetchTrips,
-  } = useContext(StateContext);
+  const dispatch = useDispatch();
+  const trips = useSelector<Trips | null>((state) => state.trips);
+  console.log("trips", trips);
 
   useEffect(() => {
-    const getTrips = async () => {
-      const res = await fetch("../../data/trips.json");
-      const data = await res.json();
-      fetchTrips(data);
-    };
-
-    getTrips();
+    dispatch(fetchTrips());
   }, []);
 
   return (
@@ -29,7 +23,7 @@ export const App = () => {
         <>
           <TripDetailsDrawer />
           {Object.values<Trip>(trips).map((trip) => (
-            <Trip key={trip.id} trip={trip} />
+            <Trip key={trip.id} tripId={trip.id} />
           ))}
         </>
       )}
