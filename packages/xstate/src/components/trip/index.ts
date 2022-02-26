@@ -1,0 +1,1 @@
+export { Trip } from "./trip";
