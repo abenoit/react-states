@@ -1,12 +1,16 @@
 import { createSelector } from "@reduxjs/toolkit";
 import { RootState } from ".";
 
+const getTrips = (state: RootState) => state.trips;
 const getOperators = (state: RootState) => state.operators;
 const getLocations = (state: RootState) => state.locations;
+const getTripId = (_state: RootState, tripId: TripId) => tripId;
 
-export const getTripById = (state: RootState, tripId: TripId) =>
+export const getTripById = createSelector(
+  [getTrips, getTripId],
   // @ts-ignore
-  state.trips && state.trips[tripId];
+  (trips, tripId) => trips && trips[tripId]
+);
 
 export const getLocationByTripId = createSelector(
   [getLocations, getTripById],
