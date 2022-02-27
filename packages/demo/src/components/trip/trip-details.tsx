@@ -12,7 +12,8 @@ interface TripProp {
   isSelected: boolean;
   trip: Trip;
   locations: Locations;
-  operators: Operators;
+  operators?: Operators;
+  operator?: Operator; // This does not make sense but helps for the demo
 }
 
 interface TripSummaryProps {
@@ -67,12 +68,14 @@ const TripSummary: React.FC<TripSummaryProps> = ({ trip, locations }) => {
 
 export const TripCardLayout: React.FC<TripProp> = ({
   trip,
+  operator: operatorProp,
   operators,
   locations,
   isSelected,
   children,
 }) => {
-  const operator = findOperatorById(trip.operator_id, operators);
+  const operator =
+    operatorProp || findOperatorById(trip.operator_id, operators!);
 
   return (
     <Card
