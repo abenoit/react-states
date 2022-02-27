@@ -5,6 +5,7 @@ import { Trip } from "../trip";
 import { TripDetailsDrawer } from "../trip-details-drawer";
 import { fetchTrips } from "../../api";
 import { tripsFetched, setLoadingState } from "../../store/actions";
+import { CircularProgress } from "@mui/material";
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -23,16 +24,16 @@ export const App = () => {
 
   return (
     <AppLayout>
-      {loading ? (
-        <div>Loading...</div>
-      ) : (
-        <>
-          <TripDetailsDrawer />
-          {Object.values<Trip>(trips).map((trip) => (
-            <Trip key={trip.id} tripId={trip.id} />
-          ))}
-        </>
-      )}
+      {loading ? <CircularProgress /> : <TripsList trips={trips} />}
+      <TripDetailsDrawer />
     </AppLayout>
   );
 };
+
+const TripsList: React.FC<{ trips: Trips }> = ({ trips }) => (
+  <>
+    {Object.values<Trip>(trips).map((trip) => (
+      <Trip key={trip.id} tripId={trip.id} />
+    ))}
+  </>
+);
