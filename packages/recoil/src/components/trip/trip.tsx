@@ -4,8 +4,13 @@ import { useSetRecoilState, useRecoilValue } from "recoil";
 import Button from "@mui/material/Button";
 
 import { TripCardLayout } from "./trip-details";
-import { selectedTripState, operatorsState, locationsState } from "../../atoms";
-import { isTripSelected, tripByIdState } from "../../atoms/selectors";
+import { selectedTripState } from "../../atoms";
+import {
+  isTripSelected,
+  tripByIdState,
+  locations as locationsState,
+  operatorFromTripId,
+} from "../../atoms/selectors";
 
 interface Props {
   tripId: TripId;
@@ -13,7 +18,7 @@ interface Props {
 
 export const Trip: React.FC<Props> = ({ tripId }) => {
   const selectTrip = useSetRecoilState(selectedTripState);
-  const operators = useRecoilValue(operatorsState);
+  const operator = useRecoilValue(operatorFromTripId(tripId));
   const locations = useRecoilValue(locationsState);
   const trip = useRecoilValue(tripByIdState(tripId));
   const isSelected = useRecoilValue(isTripSelected(tripId));
@@ -22,7 +27,7 @@ export const Trip: React.FC<Props> = ({ tripId }) => {
     <TripCardLayout
       isSelected={isSelected}
       trip={trip}
-      operators={operators}
+      operator={operator}
       locations={locations}
     >
       <Button variant="contained" onClick={() => selectTrip(tripId)}>

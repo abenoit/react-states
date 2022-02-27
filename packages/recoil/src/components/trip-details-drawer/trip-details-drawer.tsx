@@ -9,7 +9,7 @@ import { TripStops } from "../trip-stops";
 import { formatTime } from "../utils";
 
 import {
-  tripOperatorState,
+  selectedTripOperatorState,
   tripLocationsState,
   selectedTripDataState,
 } from "../../atoms/selectors";
@@ -17,9 +17,9 @@ import {
 export const TripDetailsDrawer: React.FC = () => {
   const classes = useStyles();
   const [trip, selectTrip] = useRecoilState(selectedTripDataState);
-  const operator = useRecoilValue(tripOperatorState);
+  const operator = useRecoilValue(selectedTripOperatorState);
   const locations = useRecoilValue(tripLocationsState);
-
+  console.log(trip, operator, locations);
   if (!trip) return null;
 
   return (

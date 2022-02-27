@@ -1,10 +1,39 @@
 import { selector, selectorFamily } from "recoil";
-import {
-  operatorsState,
-  selectedTripState,
-  tripsState,
-  locationsState,
-} from ".";
+import { selectedTripState } from ".";
+import { fetchTrips } from "../api";
+
+const tripsQuery = selector({
+  key: "DataSet",
+  get: async ({ get }) => {
+    // Faking server latency
+    await new Promise((r) => setTimeout(r, 1000));
+    const dataset = await fetchTrips();
+    return dataset;
+  },
+});
+
+export const trips = selector({
+  key: "trips",
+  get: ({ get }) => get(tripsQuery).trips,
+});
+export const operators = selector({
+  key: "operators",
+  get: ({ get }) => get(tripsQuery).operators,
+});
+export const locations = selector({
+  key: "locations",
+  get: ({ get }) => get(tripsQuery).locations,
+});
+
+export const operatorFromTripId = selectorFamily<any, TripId>({
+  key: "operatorFromTripId",
+  get:
+    (tripId: TripId) =>
+    ({ get }) => {
+      const operatorId = get(tripByIdState(tripId))?.operator_id;
+      return get(operators).find((operator) => operator.id === operatorId);
+    },
+});
 
 export const tripByIdState = selectorFamily<Trip, TripId>({
   key: "tripByIdState",
@@ -12,7 +41,7 @@ export const tripByIdState = selectorFamily<Trip, TripId>({
     (tripId: TripId) =>
     ({ get }) =>
       // @ts-ignore
-      get(tripsState)[tripId],
+      get(trips)[tripId],
 });
 
 export const isTripSelected = selectorFamily<boolean, TripId>({
@@ -28,46 +57,43 @@ export const isTripSelected = selectorFamily<boolean, TripId>({
 export const selectedTripDataState = selector<Trip | null>({
   key: "selectedTripDataState",
   get: ({ get }) => {
-    const trips = get(tripsState);
     const selectedTripId = get(selectedTripState);
     // @ts-ignore
-    return trips[selectedTripId];
+    return get(trips)[selectedTripId];
   },
   set: ({ set }) => {
     set(selectedTripState, null);
   },
 });
 
-export const tripOperatorState = selector({
+export const selectedTripOperatorState = selector({
   key: "tripOperatorState",
   get: ({ get }) => {
     const selectedTripId = get(selectedTripState);
-    const trips = get(tripsState);
-    const operators = get(operatorsState);
 
     // @ts-ignore
-    const selectedTrip: Trip = trips[selectedTripId];
-    if (!selectedTrip) return null;
+    if (!selectedTripId) return null;
 
-    const operatorId = selectedTrip.operator_id;
-    return operators.find((operator) => operator.id === operatorId);
+    return get(operatorFromTripId(selectedTripId));
   },
 });
 
 export const tripLocationsState = selector({
   key: "tripLocationsState",
   get: ({ get }) => {
-    const selectedTripId = get(selectedTripState);
-    const trips = get(tripsState);
-    const locations = get(locationsState);
+    const selectedTrip = get(selectedTripDataState);
+    const allLocations = get(locations);
+
     // @ts-ignore
-    const selectedTrip: Trip = trips[selectedTripId];
     if (!selectedTrip) return null;
+
     const departureLocationId = selectedTrip.origin_location_id;
     const arrivalLocationId = selectedTrip.destination_location_id;
     return {
-      origin: locations.find((location) => location.id === departureLocationId),
-      destination: locations.find(
+      origin: allLocations.find(
+        (location) => location.id === departureLocationId
+      ),
+      destination: allLocations.find(
         (location) => location.id === arrivalLocationId
       ),
     };
