@@ -1,8 +1,12 @@
-import { TRIPS_FETCHED, SELECT_TRIP } from "./action-types";
+import { TRIPS_FETCHED, SELECT_TRIP, LOADING } from "./action-types";
 
 export const tripsFetched = (dataSet: DataSet) => ({
   type: TRIPS_FETCHED,
   payload: dataSet,
+});
+
+export const setLoadingState = () => ({
+  type: LOADING,
 });
 
 export const selectTrip = (trip: Trip) => ({

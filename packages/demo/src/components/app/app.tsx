@@ -4,22 +4,26 @@ import { AppLayout } from "../app-layout";
 import { Trip } from "../trip";
 import { TripDetailsDrawer } from "../trip-details-drawer";
 import { fetchTrips } from "../../api";
-import { tripsFetched } from "../../store/actions";
+import { tripsFetched, setLoadingState } from "../../store/actions";
 
 export const App = () => {
   const dispatch = useDispatch();
-  const trips = useSelector((state) => state.trips);
+  const { loading, trips } = useSelector((state) => state.trips);
 
   useEffect(() => {
-    // TODO add loading
-    fetchTrips().then((trips) => {
-      dispatch(tripsFetched(trips));
-    });
+    dispatch(setLoadingState());
+
+    // Faking server latency
+    setTimeout(() => {
+      fetchTrips().then((trips) => {
+        dispatch(tripsFetched(trips));
+      });
+    }, 1000);
   }, []);
 
   return (
     <AppLayout>
-      {!trips ? (
+      {loading ? (
         <div>Loading...</div>
       ) : (
         <>

@@ -1,16 +1,33 @@
-import { TRIPS_FETCHED } from "./action-types";
+import { LOADING, TRIPS_FETCHED } from "./action-types";
 
-type State = Trips | null;
+type State = {
+  loading: boolean;
+  trips: Trips;
+};
 
 type Action = {
   type: string;
-  payload: DataSet;
+  payload?: DataSet;
 };
 
-function fetchTripsReducer(state: State = {}, action: Action): State {
+const initialState = {
+  loading: false,
+  trips: {},
+};
+
+function fetchTripsReducer(state: State = initialState, action: Action): State {
   switch (action.type) {
     case TRIPS_FETCHED:
-      return action.payload.trips;
+      return {
+        loading: false,
+        trips: action.payload!.trips,
+      };
+
+    case LOADING:
+      return {
+        loading: true,
+        trips: {},
+      };
 
     default:
       return state;

@@ -9,6 +9,7 @@ import { Operator } from "../operator";
 import { useStyles } from "./trip.styles";
 
 interface TripProp {
+  isSelected: boolean;
   trip: Trip;
   locations: Locations;
   operators: Operators;
@@ -68,12 +69,18 @@ export const TripCardLayout: React.FC<TripProp> = ({
   trip,
   operators,
   locations,
+  isSelected,
   children,
 }) => {
   const operator = findOperatorById(trip.operator_id, operators);
 
   return (
-    <Card sx={{ maxWidth: 600 }}>
+    <Card
+      sx={{
+        maxWidth: 600,
+        backgroundColor: isSelected ? "lightgrey" : "white",
+      }}
+    >
       <CardContent>
         <Stack direction="column" spacing={2}>
           {operator && <Operator operator={operator} />}
