@@ -15,6 +15,16 @@ export const tripByIdState = selectorFamily<Trip, TripId>({
       get(tripsState)[tripId],
 });
 
+export const isTripSelected = selectorFamily<boolean, TripId>({
+  key: "isTripSelected",
+  get:
+    (tripId: TripId) =>
+    ({ get }) => {
+      const selectedTripId = get(selectedTripState);
+      return selectedTripId === tripId;
+    },
+});
+
 export const selectedTripDataState = selector<Trip | null>({
   key: "selectedTripDataState",
   get: ({ get }) => {
