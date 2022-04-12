@@ -1,7 +1,6 @@
 import Drawer from "@mui/material/Drawer";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import LocationOn from "@mui/icons-material/LocationOn";
 import ArrowForwardIos from "@mui/icons-material/ArrowForwardIos";
 import Seat from "@mui/icons-material/AirlineSeatReclineExtra";
 import Sell from "@mui/icons-material/Sell";
